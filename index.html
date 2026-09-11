@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Newsletter Digest</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    color: #222;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+  .sub { color: #666; margin-top: 0; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; color: #666; font-size: 0.9rem; }
+  a { color: #1a5490; }
+</style>
+</head>
+<body>
+
+<h1>Newsletter Digest</h1>
+<p class="sub">A personal tool for summarizing email newsletters.</p>
+
+<h2>What it does</h2>
+<p>
+Newsletter Digest is a small script that reads email newsletters from a single
+Gmail account, produces a written summary of them, and files the originals away.
+It exists because its author subscribes to more newsletters than he can read,
+and would rather have one weekly summary than an inbox of unread mail.
+</p>
+
+<h2>Who it is for</h2>
+<p>
+One person. This is a personal project running on a personal laptop against a
+single mailbox. It is not a product, it is not offered as a service, and it has
+no users other than its author.
+</p>
+
+<h2>How it works</h2>
+<p>
+The script connects to Gmail using Google's official API, with permission
+granted by the account holder. It reads messages under a single label, sends
+their text to Anthropic's Claude API to be summarized, writes the summary to a
+file on the author's computer, and marks the original messages as read and
+archived. It cannot permanently delete email.
+</p>
+
+<h2>Privacy</h2>
+<p>
+See the <a href="privacy.html">privacy policy</a> for what data the application
+touches and what happens to it.
+</p>
+
+<footer>
+Contact: <a href="mailto:jeffsleasman@gmail.com">jeffsleasman@gmail.com</a>
+</footer>
+
+</body>
+</html>
